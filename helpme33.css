@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body{
+     background-image: url(https://images.theconversation.com/files/199943/original/file-20171219-4957-1xotuz6.jpg);
+     padding: 16px;
+     background-repeat: no-repeat;
+     background-position: right top;
+     background-attachment: scroll;
+     background-size: 2000px;
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 300;
+     font-display: swap;
+     src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  nav{
+    top: 10;
+    width: 100%;
+    height: 80px;
+    background: none;
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+    min-height: 8vh;
+    background-color: transparent;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v9/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+ }
+
+ .logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 56px;
+    margin-left: 80px;
+ }
+
+ .logo li{
+     list-style: none;
+ }
+
+ .logo img{
+    width: 140px;
+    height: 110px;
+    position: absolute;
+    top:  5px;
+    left: 120px;
+}
+
+  .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+  }
+
+  .nav-links li{
+      list-style: none;
+  }
+
+  .nav-links a{
+      color: white;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-size: 18px;
+  }
+
+  .hover {
+      display: inline-block;
+      position: relative;
+  }
+
+  .hover::before {
+      content:'';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+  }
+
+  .hover:hover::before{
+      transform: scaleX(1);
+      transform-origin: bottom left;
+  }
+
+  .image1{
+      width: 850px;
+      position: absolute;
+      top: 30%;
+      left: 20%;
+  }
+
+  h1{
+      font-size: 70px;
+      position: absolute;
+      bottom: -160px;
+      left: 150px;
+      color: white;
+  }
+
+  h2{
+      font-size: 30px;
+      position: absolute;
+      bottom: -280px;
+      left: 150px;
+      color: white;
+  }
